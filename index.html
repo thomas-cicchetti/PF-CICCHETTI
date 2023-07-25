@@ -222,8 +222,13 @@
     type    : 'loop',
     perPage : 3,
     autoplay: true,
-    } );
-
+    gap:"20px",
+    width: '100%',
+    breakpoints: {
+		640: {
+			perPage: 2,
+		}
+        } )
     splide.mount();
 </script>
 </html>

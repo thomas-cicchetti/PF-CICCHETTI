@@ -48,14 +48,13 @@ header {
   font-size: 30px;
   color: rgb(226, 140, 193);
   font-weight: 500;
-  padding-right: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .product-icon-index {
-  width: 100%;
+  width: 80%;
 }
 
 .image-container {
@@ -77,20 +76,16 @@ header {
 
 .listorder {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
+  margin-bottom: 60px;
 }
 
 .banner {
-  width: 500px;
-  height: 650px;
-  list-style: none;
-  display: flex;
-  margin-left: 53px;
-  margin-top: 30px;
   border-radius: 20px;
   border: solid rgba(175, 80, 147, 0.925) 1px;
+  width: 80%;
 }
 
 h2 {
@@ -344,14 +339,82 @@ footer {
   margin: 50px;
   border: solid rgba(175, 80, 147, 0.925) 10px;
   width: 50%;
-  height: 500px;
+  height: 550px;
   border-radius: 30px;
+}
+
+.space1 {
+  padding-bottom: 30px;
+}
+
+.space2 {
+  width: 80px;
+}
+
+.contact {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.t2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgcontact {
+  width: 300px;
+  border-radius: 50px;
+}
+
+.imgcontact:hover {
+  background-image: image();
 }
 
 .menu-icon, #menu-toggle {
   display: none;
 }
 
+input {
+  border-radius: 10px;
+  border: solid 1px white;
+  height: 25px;
+  width: 350px;
+}
+
+button {
+  border-radius: 10px;
+  border: solid 1px white;
+  height: 25px;
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+input:hover {
+  border: solid rgba(175, 80, 147, 0.925) 1px;
+}
+
+button:hover {
+  border: solid rgba(175, 80, 147, 0.925) 1px;
+}
+
+.i-msg {
+  height: 100px;
+}
+
+@media (max-width: 870px) {
+  .listorder {
+    flex-direction: column;
+  }
+}
+@media (max-width: 670px) {
+  .textbody {
+    font-size: 60px;
+  }
+}
 @media (max-width: 900px) {
   .prod-container {
     flex-direction: column;
@@ -399,6 +462,13 @@ footer {
     width: 350px;
     height: 500px;
   }
+  .t2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .subcont {
+    height: 5000px;
+  }
   .navbar {
     display: none;
     flex-direction: column;
@@ -441,6 +511,9 @@ footer {
   .titpedidos h3 {
     margin-left: 50px;
   }
+  .subcont {
+    width: 80%;
+  }
 }
 @media (max-width: 1050px) {
   .img-ped {
@@ -471,6 +544,30 @@ footer {
   }
   .instagram {
     margin-left: 75px;
+  }
+}
+@media (max-width: 880px) {
+  .t2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .subcont {
+    height: 950px;
+  }
+}
+@media (max-width: 500px) {
+  .imgcontact {
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  .subcont {
+    height: 100%;
+  }
+  input {
+    width: 100%;
+  }
+  .i-msg {
+    width: 180px;
   }
 }
 
