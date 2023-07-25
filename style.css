@@ -85,7 +85,7 @@ header {
 .banner {
   border-radius: 20px;
   border: solid rgba(175, 80, 147, 0.925) 1px;
-  width: 80%;
+  width: 100%;
 }
 
 h2 {
@@ -405,6 +405,12 @@ button:hover {
   height: 100px;
 }
 
+.contenedor-slider {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 870px) {
   .listorder {
     flex-direction: column;
@@ -478,7 +484,7 @@ button:hover {
     right: 0;
     align-items: start;
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(226, 140, 193);
   }
   #menu-toggle, .menu-icon {
     display: block;
@@ -539,11 +545,13 @@ button:hover {
   }
 }
 @media (max-width: 390px) {
-  footer {
-    width: 390px;
-  }
   .instagram {
-    margin-left: 75px;
+    padding: 10px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .instagram-container {
+    margin: 0px;
   }
 }
 @media (max-width: 880px) {
