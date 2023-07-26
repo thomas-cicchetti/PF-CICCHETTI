@@ -46,7 +46,7 @@ header {
 
 .textbody {
     font-family: coolvetica;
-    font-size: 100px;
+    font-size: 70px;
     color: $c2;
     font-weight: 550;
     padding-right: 20px;
@@ -76,12 +76,11 @@ header {
 
 .waico {
     position: fixed;
-    bottom: 4px;
+    bottom: 6px;
     right: 12px;
     margin: 5px;
-    font-size: 50px;
-
 }
+
 
 .listprincipal li a img{
     width: 100px;
@@ -157,10 +156,6 @@ a{
 
 nav a:hover{
     color: $c3;
-}
-
-h4:hover{
-    text-shadow: 0 0 2px $c3;
 }
 
 .icon-hov:hover{
@@ -241,10 +236,11 @@ h4:hover{
 .subtitle-prod{
     font-family: coolvetica;
     font-weight: 500;
-    margin-top: 100px;
+    margin-top: 150px;
     color: $c2;
     font-size: 50px;
     margin-bottom: 80px;
+    text-decoration: underline;
 }
 
 .section-color-alternative{
@@ -423,9 +419,61 @@ button:hover{
 }
 
 .contenedor-slider{
+    margin-top: 60px;
     padding: 20px;
     display: flex;
     justify-content: center;
+}
+
+.h-cont{
+    display: flex;
+    margin: 30px;
+    padding: 50px;
+    gap: 50px;
+    text-align: center;
+    
+}
+
+.tithis div h4{
+    font-family: coolvetica;
+    color: $c3;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.divcontainer div{
+    border: solid $c3 3px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.par-text div p{
+    font-family: coolvetica;
+    color: $c3;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h5{
+    font-family: coolvetica;
+        font-weight: 500;
+        margin-top: 150px;
+        color: $c2;
+        font-size: 40px;
+        margin-bottom: 80px;
+        text-align: center;
+        margin-top: 50px;
+}
+
+@media (max-width: 1100px){
+    .h-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+    }
 }
 
 @media (max-width: 870px){
